@@ -5,8 +5,10 @@
 
 ( algun tipo de struct)
 
-Prototypes / function names
-
+/**
+ *
+ */
+int _printf(const char *format, ...);
 
 #endif
 
