@@ -3,11 +3,8 @@
 #include <stdarg.h>
 #include <unistd.h>
 
-( algun tipo de struct)
 
-Prototypes / function names
+(algun tipo de struct)
 
 
 #endif
-
-
