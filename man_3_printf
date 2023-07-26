@@ -31,10 +31,8 @@ Prints a single percent sign (%).
 .SH RETURN VALUE
 Upon successful return, this function returns the number of characters printed (excluding the null byte used to end output to string). If an output error is encountered, a negative value is returned.
 
-
 .SH NOTES
 This implementation of _printf supports a limited set of format specifiers, including %d for integers and %s for strings. Additional format specifiers may be added in the future.
-
 
 .SH AUTHOR
 by Miguel Figueroa 
