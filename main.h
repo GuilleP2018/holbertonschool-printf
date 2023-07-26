@@ -10,4 +10,9 @@ int p_char(char c);
 int p_str(char *s);
 int p_int(int num);
 int p_default(char c);
+int print_char(va_list types);
+int print_string(va_list types);
+int print_percent(va_list types);
+int print_int(va_list types);
+int print_binary(va_list types);
 #endif
