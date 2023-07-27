@@ -71,7 +71,7 @@ int print_num(va_list arg)
 
 /**
  * print_m - print the modulus operator
- * @arg:
+ * @arg: void
  */
 
 int print_m(va_list arg)
@@ -82,7 +82,4 @@ int print_m(va_list arg)
 
 	write(1, &c, 1);
 	return(1);
-
-
 }
-
