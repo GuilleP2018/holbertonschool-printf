@@ -31,8 +31,8 @@ int _printf(const char *format, ...)
 			{
 				for (i = 0; ids[i].id != '\0'; i++)
 					if (format[x] == ids[i].id)
-					{	
-					 	count += ids[i].fn(lst);
+					{
+						count += ids[i].fn(lst);
 						break;
 					
 					}

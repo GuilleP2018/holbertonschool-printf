@@ -8,7 +8,7 @@
 /**
  * struct inface - interface for print
  * @id: the character, which identifies the type of the arg
- * @fn: function to run if id matches 
+ * @fn: function to run if id matches
  */
 
 typedef struct intface
