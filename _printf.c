@@ -31,24 +31,20 @@ int _printf(const char *format, ...)
 					if (format[i] == specs[j].cs)
 					{
 						count += specs[j].f(args);
-						for (i = 0; ids[i].id != '\0'; i++)
-							if (format[x] == ids[i].id)
-							{
-								count += ids[i].fn(lst);
-								break;
-							}
-						if (specs[j].cs)
-							break;
+						break;
 					}
-				if (format[i] == '\0')
-					return (-1);
+				if (specs[j].cs)
+					break;
 			}
-			else
-			{
-				write(1, &format[i], 1);
-				count += 1;
-			}
-
-			va_end(args);
-			return (count);
+			if (format[i] == '\0')
+				return (-1);
 		}
+		else
+		{
+			write(1, &format[i], 1);
+			count += 1;
+		}
+	va_end(args);
+	return (count);
+}
+

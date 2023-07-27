@@ -6,7 +6,7 @@
 #include <stdlib.h>
 
 /**
- * struct coversion_specifiers - struct
+ * struct conversion_specifiers - struct
  * @cs: char
  * @f: function
  */
@@ -14,7 +14,7 @@
 typedef struct conversion_specifiers
 {
 char cs;
-int (*f )(va_list);
+int (*f)(va_list);
 } c_s;
 
 

@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_c - print char
- * @c: char inputedco
+ * @arg: input arg
  * Return: 1
  */
 int print_c(va_list arg)
@@ -13,7 +13,7 @@ int print_c(va_list arg)
 }
 /**
  * print_s - print string
- * @s: string inputed
+ * @arg: string inputed
  * Return: lenght of string
  */
 int print_s(va_list arg)
@@ -35,7 +35,7 @@ int print_s(va_list arg)
 }
 /**
  * print_num - function to print a decimal / integer
- * @n: number inputed
+ * @arg: number inputed
  * Return: int
  */
 int print_num(va_list arg)
@@ -72,6 +72,7 @@ int print_num(va_list arg)
 /**
  * print_m - print the modulus operator
  * @arg: void
+ * Return: int
  */
 
 int print_m(va_list arg)
@@ -81,5 +82,5 @@ int print_m(va_list arg)
 	(void) arg;
 
 	write(1, &c, 1);
-	return(1);
+	return (1);
 }
