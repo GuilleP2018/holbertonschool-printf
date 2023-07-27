@@ -1,4 +1,4 @@
-# HOLBERTONSCHOOL-PRINTF :)
+# ʜᴏʟʙᴇʀᴛᴏɴꜱᴄʜᴏᴏʟ-ᴘʀɪɴᴛꜰ std::cout<<"\U0001F600"; \\
 
 ### ᴡʜᴀᴛ ɪꜱ ᴛʜɪꜱ ᴘʀᴏᴊᴇᴄᴛ ᴀʙᴏᴜᴛ??
 
@@ -6,7 +6,7 @@
 
 Its called _printf() and is more simple that the original C library function. Our function sends formatted output to stdout but dont accept the following format tags: flags, width, .precision and length.
 
-### FILES ON PJ 
+### FILES ON PJ :
 
 - man_3_printf - man page for function created
 - _printf.c - file that contains the function that produces output according to a format
@@ -26,5 +26,5 @@ A format specifier in c are used to take input and print the output of a type. T
 ### Challenges: 
 
 ### Credits:
-Hi! im Guillermo and im the developer behind this project, here is my github if your interest on more of my projects! :
- Im Miguel Figueroa and im the developer behind this project, here is my github if your interest on see more: 
+Hi! im Guillermo and im the developer behind this project, here is my github if your interest on more of my projects! : https://github.com/GuilleP2018
+ Im Miguel Figueroa and im the developer behind this project, here is my github if your interest on see more: https://github.com/figue0122
