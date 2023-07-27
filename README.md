@@ -25,7 +25,7 @@ A format specifier in c are used to take input and print the output of a type. T
 
 ### Challenges:
 
-Challenges faced:
+Challenges Faced:
 
 - Implementing Conversion Functions for Each Format Specifier
 - Error Handiling (dealing with invalid format specifier, ect..)
