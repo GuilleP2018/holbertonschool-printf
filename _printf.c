@@ -27,31 +27,28 @@ int _printf(const char *format, ...)
 			i++;
 			for (; format[i] != '\0'; i++)
 			{
-<<<<<<< HEAD
 				for (j = 0; specs[j].cs != '\0'; j++)
 					if (format[i] == specs[j].cs)
 					{
 						count += specs[j].f(args);
-=======
-				for (i = 0; ids[i].id != '\0'; i++)
-					if (format[x] == ids[i].id)
-					{
-						count += ids[i].fn(lst);
->>>>>>> 92ced225e85f9527b804ccf21289d62d5917702f
-						break;
+						for (i = 0; ids[i].id != '\0'; i++)
+							if (format[x] == ids[i].id)
+							{
+								count += ids[i].fn(lst);
+								break;
+							}
+						if (specs[j].cs)
+							break;
 					}
-				if (specs[j].cs)
-					break;
+				if (format[i] == '\0')
+					return (-1);
 			}
-			if (format[i] == '\0')
-				return (-1);
-		}
-		else
-		{
-			write(1, &format[i], 1);
-			count += 1;
-		}
+			else
+			{
+				write(1, &format[i], 1);
+				count += 1;
+			}
 
-	va_end(args);
-	return (count);
-}
+			va_end(args);
+			return (count);
+		}
