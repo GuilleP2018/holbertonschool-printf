@@ -6,12 +6,12 @@
 
 Its called _printf() and is more simple that the original C library function. Our function sends formatted output to stdout but dont accept the following format tags: flags, width, .precision and length.
 
-### FILES ON PJ :
+### 📁 ON PJ :
 
 - man_3_printf - man page for function created
 - _printf.c - file that contains the function that produces output according to a format
 - main.h - file that contains the prototypes used on this project.
-
+- conv_spec.c - file that containts all the functions with the formats specifier
 ### What is format specifier?
 
 A format specifier in c are used to take input and print the output of a type. The symbol we use in every format specifier is %. The specifier tells the compiler about the type of data that most be given or input and the type of data that most be printed on the screen.
@@ -23,7 +23,11 @@ A format specifier in c are used to take input and print the output of a type. T
 | %s               | Write a function that prints strings, followed by a new line. |
 | %c               | Write a function that prints anything.                        |
 
-### Challenges: 
+### Challenges:
+1. Implementing Conversion Functions for Each Format Specifier
+2.Error Handiling (dealing with invalid format specifier, ect..)
+3.Ensuring Code Efficiency
+
 
 ### Credits:
 Hi! im Guillermo and im the developer behind this project, here is my github if your interest on more of my projects! : https://github.com/GuilleP2018
