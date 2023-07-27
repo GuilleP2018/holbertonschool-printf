@@ -5,7 +5,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+<<<<<<< HEAD
 typedef struct conversion_specifiers
+=======
+/**
+ * struct inface - interface for print
+ * @id: the character, which identifies the type of the arg
+ * @fn: function to run if id matches
+ */
+
+typedef struct intface
+>>>>>>> 92ced225e85f9527b804ccf21289d62d5917702f
 {
 char cs;
 int (*f )(va_list);
