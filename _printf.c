@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * _printf - Printf function
@@ -8,29 +9,45 @@
 
 int _printf(const char *format, ...)
 {
-	int x, printed = 0, printed_chars = 0;
-	va_list lst;
+	int x,i;
+	int count = 0;
+	va_list list;
+	interface ids[] = {
+		{'c', _print_char},
+		{'s', _print_string},
+		{'i', _print_int},
+		{'d', _print_int},
+		{'%', _print_mod},
+		{'\0', NULL},
 
-	if (format == NULL)
-		return (-1);
-
-	va_start(lst, format);
-
-	for (x = 0; format && format[x] != '\0'; x++)
-	{
-		if (format[x] != '%')
+	};
+	
+	va_start(list, format);
+	for (x = 0; format[x]; x++)
+		if (format[x]; == '%')
 		{
-		 write(1, &format[x], 1);
-			printed_chars++;
-		}
-		else
-		{
-			printed = handle_print(format, &x, lst);
-			if (printed == -1)
-				return (-1);
-			printed_chars += printed;
-		}
-	}
-	va_end(lst);
-	return (printed_chars);
+			x++;
+			for (; format[x] != '\0'; x++)
+			{
+				for (i = 0; ids[i].id != '\0'; i++)
+					if (format[x] == ids[i].id)
+					{	
+					 	count += ids[i].fn(lst);
+						break;
+					
+					}
+				if (ids[i].id)
+					break;
+
+				}
+				if (format[x] == '\0')
+					return (-1);
+			}
+			else
+			{
+				write(1, &format[x], 1);
+				count += 1;
+			}
+	va_end(list);
+	return (count);
 }
