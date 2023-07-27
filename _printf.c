@@ -1,53 +1,50 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * _printf - Printf function
+ * _printf - A simplier function of printf
  * @format: format
- * Return: Printed chars
+ * Return: characters printed
  */
 
 int _printf(const char *format, ...)
 {
-	int x,i;
+	int i, j;
 	int count = 0;
-	va_list list;
-	interface ids[] = {
-		{'c', _print_char},
-		{'s', _print_string},
-		{'i', _print_int},
-		{'d', _print_int},
-		{'%', _print_mod},
-		{'\0', NULL},
-
+	va_list args;
+	c_s specs[] = {
+		{'c', print_c},
+		{'s', print_s},
+		{'i', print_num},
+		{'d', print_num},
+		{'%', print_m},
+		{'\0', NULL}
 	};
-	
-	va_start(list, format);
-	for (x = 0; format[x]; x++)
-		if (format[x]; == '%')
-		{
-			x++;
-			for (; format[x] != '\0'; x++)
-			{
-				for (i = 0; ids[i].id != '\0'; i++)
-					if (format[x] == ids[i].id)
-					{	
-					 	count += ids[i].fn(lst);
-						break;
-					
-					}
-				if (ids[i].id)
-					break;
 
-				}
-				if (format[x] == '\0')
-					return (-1);
-			}
-			else
+	va_start(args, format);
+	for (i = 0; format[i]; i++)
+		if (format[i] == '%')
+		{
+			i++;
+			for (; format[i] != '\0'; i++)
 			{
-				write(1, &format[x], 1);
-				count += 1;
+				for (j = 0; specs[j].cs != '\0'; j++)
+					if (format[i] == specs[j].cs)
+					{
+						count += specs[j].f(args);
+						break;
+					}
+				if (specs[j].cs)
+					break;
 			}
-	va_end(list);
+			if (format[i] == '\0')
+				return (-1);
+		}
+		else
+		{
+			write(1, &format[i], 1);
+			count += 1;
+		}
+
+	va_end(args);
 	return (count);
 }

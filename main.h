@@ -1,25 +1,21 @@
 #ifndef MAIN_H
 #define MAIN_H
-
-#include <stdarg.h>
 #include <unistd.h>
+#include <stdarg.h>
+#include <stdio.h>
 #include <stdlib.h>
 
-/**
- * struct inface - interface for print
- * @id: the character, which identifies the type of the arg
- * @fn: function to run if id matches 
- */
-
-typedef struct intface
+typedef struct conversion_specifiers
 {
-	char id;
-	int (*fn)(va_list);
-} interface;
+char cs;
+int (*f )(va_list);
+} c_s;
+
 
 int _printf(const char *format, ...);
-int _print_char(va_list ls);
-int _print_mod(va_list ls);
-int _print_string(va_list ls);
-int _primnt_int(va_list ls);
+int print_c(va_list arg);
+int print_s(va_list arg);
+int print_num(va_list arg);
+int print_m(va_list arg);
 #endif
+
