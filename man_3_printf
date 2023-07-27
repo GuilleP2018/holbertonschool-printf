@@ -35,8 +35,9 @@ Upon successful return, this function returns the number of characters printed (
 This implementation of _printf supports a limited set of format specifiers, including %d for integers and %s for strings. Additional format specifiers may be added in the future.
 
 .SH AUTHOR
-by Miguel Figueroa 
-Guillermo
+Miguel Figueroa: 6550@holbertonstudents.com
+
+Guillermo Pereyo: 6839@holbertonstudents.com
 
 .SH SEE ALSO
 .BR printf(3) 
