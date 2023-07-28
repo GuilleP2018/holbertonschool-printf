@@ -25,6 +25,9 @@ Prints a signed integer in decimal format.
 .TP "%s"
 Prints a string of characters.
 
+.TP "%c"
+Prints a character.
+
 .TP "%"
 Prints a single percent sign (%).
 
