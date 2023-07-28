@@ -19,7 +19,7 @@ A pointer to a const char that contains the format string. The format string may
 .SH FORMAT SPECIFIERS
 The following format specifiers are supported:
 
-.TP "d, %i"
+.TP "%d, %i"
 Prints a signed integer in decimal format.
 
 .TP "%s"
