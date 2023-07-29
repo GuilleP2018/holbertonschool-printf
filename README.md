@@ -31,7 +31,27 @@ Challenges Faced:
 - Error Handiling (dealing with invalid format specifier, ect..)
 - Ensuring Code Efficiency
 
+### Example:
+Compiler:
+  -gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
+Example Output:
+  -./a.out
+
+Let's try to printf a simple sentence.
+Let's try to printf a simple sentence.
+Length:[39, 39]
+Length:[39, 39]
+Negative:[-762534]
+Negative:[-762534]
+Character:[H]
+Character:[H]
+String:[I am a string !]
+String:[I am a string !]
+Percent:[%]
+Percent:[%]
 
 ### Credits:
 Hi! im Guillermo and im the developer behind this project, here is my github if your interest on more of my projects! : https://github.com/GuilleP2018
  Im Miguel Figueroa and im the developer behind this project, here is my github if your interest on see more: https://github.com/figue0122
+
+Add example

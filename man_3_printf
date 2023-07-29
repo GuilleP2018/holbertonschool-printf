@@ -10,6 +10,9 @@ int _printf(const char *format, ...);
 
 _printf("TEXT");
 
+.SH COMPILER
+gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
+
 .SH DESCRIPTION
 The _printf function is a custom implementation of the printf function in the C programming language. It prints formatted output to the standard output.
 
